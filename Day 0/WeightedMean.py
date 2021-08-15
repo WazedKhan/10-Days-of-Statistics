@@ -3,6 +3,8 @@ def weightedMean(X, W):
     for i in range(0,len(X)):
         n += (X[i]*W[i])
     print(round(n/sum(W),1))
+    #print(round((sum([X[i]*W[i] for i in range(len(X))]))/sum(W),1))   #One line ans
+
 
 if __name__ == '__main__':
     n = int(input().strip())
